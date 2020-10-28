@@ -1,3 +1,60 @@
 body {
   margin: 0;
 }
+
+/* Graph */
+svg.graph {
+  text.axis-label {
+    font-family: sans-serif;
+    font-size: 10px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    pointer-events: none;
+  }
+}
+
+g.bar {
+  rect {
+    fill: steelblue;
+  }
+  text {
+    fill: white;
+    font-family: sans-serif;
+    font-size: 10px;
+    dominant-baseline: hanging;
+    writing-mode: tb;
+    pointer-events: none;
+  }
+}
+
+g.tooltip {
+  rect {
+    y: -20px;
+    opacity: 0.5;
+    width: 20px;
+    height: 19px;
+    fill: green;
+  }
+  text {
+    fill: white;
+    dominant-baseline: auto;
+    text-anchor: middle;
+    font-family: sans-serif;
+    font-size: 10px;
+  }
+}
+
+g.tooltip.visible {
+  visibility: visible; 
+}
+
+g.tooltip.hidden {
+  visibility: hidden; 
+}
+
+/* Map */
+svg.map {
+  path.country {
+    stroke: white;
+  }
+}

@@ -49,12 +49,15 @@ module.exports = {
   resolve: {
     // use aliases instead of relative import paths in js
     alias: {
-      modules: path.resolve(__dirname, 'src/modules'),
+      scss: path.resolve(__dirname, 'src/scss'),
       assets: path.resolve(__dirname, 'src/assets'),
+      modules: path.resolve(__dirname, 'src/modules'),
     },
   },
   plugins: [
     // generate dist/index.html
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/views/index.html',
+    }),
   ],
 };
