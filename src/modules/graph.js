@@ -1,6 +1,6 @@
 // https://observablehq.com/@d3/lets-make-a-bar-chart?collection=@d3/lets-make-a-bar-chart
 import * as d3 from 'd3';
-import data from 'assets/numbers.csv';
+import data from 'assets/graph.csv';
 
 // constants
 const widthBar = 20;

@@ -56,5 +56,10 @@ g.tooltip.hidden {
 svg.map {
   path.country {
     stroke: white;
+
+    &:hover {
+      cursor: pointer;
+      fill: red;
+    }
   }
 }
